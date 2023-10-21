@@ -21,7 +21,7 @@ const page = () => {
       <hr />
       <label htmlFor="username">username</label>
       <input 
-      className="p-2 border border-gray-500 rounded-md mb-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
+      className="p-2 mb-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400"
         id="username"
         type="text" 
         value={user.username}
@@ -30,7 +30,7 @@ const page = () => {
       />
       <label htmlFor="email">email</label>
       <input 
-      className="p-2 border border-gray-500 rounded-md mb-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
+      className="p-2 mb-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400"
         id="email"
         type="email" 
         value={user.email}
@@ -39,7 +39,7 @@ const page = () => {
       />
       <label htmlFor="password">password</label>
       <input 
-      className="p-2 border border-gray-500 rounded-md mb-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
+      className="p-2 mb-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400"
         id="password"
         type="password" 
         value={user.password}
@@ -48,7 +48,7 @@ const page = () => {
       />
       <button
         onClick={onSignup}
-        className="p-2 border border-gray-500 rounded-lg mb-2 mt-6 focus:outline-none focus:ring-2 focus:ring-gray-400"
+        className="p-2 mt-6 mb-2 border border-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400"
       >
         Signup here
       </button>
