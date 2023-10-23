@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React from 'react'
 import {useRouter} from "next/navigation";
-import {axios} from "axios";
+import axios from "axios";
 import ClientOnly from "../../../components/ClientOnly";
 
 const page = () => {
@@ -16,7 +16,7 @@ const page = () => {
   }
 
   return (
-    <ClientOnly>
+    
       <div className='flex flex-col items-center justify-center min-h-screen py-2'>
         <h1>Login</h1>
         <hr />
@@ -46,7 +46,7 @@ const page = () => {
         </button>
         <Link href="/signup">Visit Signup page</Link>
       </div>
-    </ClientOnly>
+    
   )
 }
 
