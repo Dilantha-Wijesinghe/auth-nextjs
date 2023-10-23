@@ -43,11 +43,11 @@ const page = () => {
   return (
     
       <div className='flex flex-col items-center justify-center min-h-screen py-2'>
-        <h1>Login</h1>
+        <h1>{loading ? "Processing" : "Login"}</h1>
         <hr />
         <label htmlFor="email">email</label>
         <input 
-        className="p-2 mb-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400"
+        className="p-2 mb-2 text-black border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400"
           id="email"
           type="email" 
           value={user.email}
@@ -56,7 +56,7 @@ const page = () => {
         />
         <label htmlFor="password">password</label>
         <input 
-        className="p-2 mb-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400"
+        className="p-2 mb-2 text-black border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400"
           id="password"
           type="password" 
           value={user.password}
@@ -67,7 +67,7 @@ const page = () => {
           onClick={onLogin}
           className="p-2 mt-6 mb-2 border border-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400"
         >
-          Login here
+          {buttonDisabled ? "Fill all fields" : "Login"}
         </button>
         <Link href="/signup">Visit Signup page</Link>
       </div>
