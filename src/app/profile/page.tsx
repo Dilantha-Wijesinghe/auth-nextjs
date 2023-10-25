@@ -4,7 +4,7 @@ import Link from 'next/link';
 import React from 'react';
 import ClientOnly from '../../../components/ClientOnly';
 import toast from 'react-hot-toast';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 
 const page = () => {
 
