@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, {useEffect} from 'react'
+import React, {useEffect,useState} from 'react'
 import {useRouter} from "next/navigation";
 import axios from "axios";
 import ClientOnly from "../../../components/ClientOnly";
@@ -8,13 +8,13 @@ import toast from "react-hot-toast";
 
 const page = () => {
   const router = useRouter();
-  const [user, setUser] = React.useState({
+  const [user, setUser] = useState({
     email: "",
     password: "",
   })
 
-  const [buttonDisabled, setButtonDisabled] = React.useState(false);
-  const [loading, setLoading] = React.useState(false);
+  const [buttonDisabled, setButtonDisabled] = useState(false);
+  const [loading, setLoading] = useState(false);
   
   const onLogin= async () => {
     try {
